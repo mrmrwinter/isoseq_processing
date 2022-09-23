@@ -16,11 +16,12 @@ rule cluster:
 
 rule pbmm2:
     input:
-        config["experiment_name"] + "unpolished.bam"
+        config["experiment_name"] + "unpolished.bam",
+        config["experiment_name"] + "unpolished.bam",
     output:
         config["experiment_name"] + "mapped.bam"
     shell:
-        "pbmm2 align --preset ISOSEQ --sort {input} {config[genome]} {output}"
+        "pbmm2 align --preset ISOSEQ --sort {input[0]} {input[1]} {output}"
 
 
 rule collapse:

@@ -16,8 +16,8 @@ rule cluster:
 
 rule pbmm2:
     input:
-        config["experiment_name"] + "/unpolished.bam",
-        config["genome"] 
+        config["experiment_name"] + "unpolished.bam",
+        config["genome"],
     output:
         config["experiment_name"] + "/mapped.bam"
     shell:

@@ -1,5 +1,6 @@
 # IsoSeq Processing
 ## A snakemake workflow to automate the IsoSeq3 pipeline from Pacific Biosciences
+https://github.com/PacificBiosciences/IsoSeq
 
 The workflow currently requires as input the `flnc.bam` file from the postprocessing stage of IsoSeq sequencing, and a genome assembly.
 

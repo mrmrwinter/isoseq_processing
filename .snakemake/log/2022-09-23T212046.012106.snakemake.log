@@ -1,0 +1,5 @@
+Building DAG of jobs...
+MissingInputException in rule all in line 5 of /home/531734/mike/62_isoseq_processing/isoseq_processing/snakefile:
+Missing input files for rule all:
+    affected files:
+        M_javanica/collapsed.gff

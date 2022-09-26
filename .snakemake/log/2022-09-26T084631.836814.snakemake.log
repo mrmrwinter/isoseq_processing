@@ -1,0 +1,23 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 20
+Rules claiming more threads will be scaled down.
+Job stats:
+job         count    min threads    max threads
+--------  -------  -------------  -------------
+all             1              1              1
+cluster         1              1              1
+collapse        1              1              1
+pbmm2           1              1              1
+total           4              1              1
+
+Select jobs to execute...
+
+[Mon Sep 26 08:46:39 2022]
+rule cluster:
+    input: /home/531734/mike/javanica/data/IsoSeq_2021/flnc.bam
+    output: M_javanica/unpolished.bam
+    jobid: 3
+    reason: Forced execution
+    resources: tmpdir=/tmp
+

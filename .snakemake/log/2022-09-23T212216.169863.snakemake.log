@@ -1,0 +1,33 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job         count    min threads    max threads
+--------  -------  -------------  -------------
+all             1              1              1
+cluster         1              1              1
+collapse        1              1              1
+pbmm2           1              1              1
+total           4              1              1
+
+Select jobs to execute...
+
+[Fri Sep 23 21:22:16 2022]
+rule cluster:
+    input: /home/531734/mike/javanica/data/IsoSeq_2021/flnc.bam
+    output: M_javanica/unpolished.bam
+    jobid: 3
+    reason: Missing output files: M_javanica/unpolished.bam
+    resources: tmpdir=/tmp
+
+Terminating processes on user request, this might take some time.
+[Fri Sep 23 21:22:31 2022]
+Error in rule cluster:
+    jobid: 3
+    output: M_javanica/unpolished.bam
+    shell:
+        isoseq3 cluster /home/531734/mike/javanica/data/IsoSeq_2021/flnc.bam M_javanica/unpolished.bam --verbose --use-qvs
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: .snakemake/log/2022-09-23T212216.169863.snakemake.log

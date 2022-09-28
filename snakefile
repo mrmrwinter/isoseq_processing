@@ -1,5 +1,3 @@
-# https://github.com/PacificBiosciences/IsoSeq
-
 configfile: "config.yaml"
 
 rule all:
@@ -31,27 +29,3 @@ rule collapse:
         config["experiment_name"] + "/collapsed.gff"
     shell:
         "isoseq3 collapse {input} {output}"
-
-# rule :
-#     input:
-#         ""
-#     output:
-#         ""
-#     shell:
-#         ""
-
-# rule :
-#     input:
-#         ""
-#     output:
-#         ""
-#     shell:
-#         ""
-
-# rule :
-#     input:
-#         ""
-#     output:
-#         ""
-#     shell:
-#         ""

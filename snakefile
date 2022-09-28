@@ -1,5 +1,3 @@
-# https://github.com/PacificBiosciences/IsoSeq
-
 configfile: "config.yaml"
 
 rule all:
@@ -16,7 +14,7 @@ rule cluster:
 
 rule pbmm2:
     input:
-        config["experiment_name"] + "unpolished.bam",
+        config["experiment_name"] + "/unpolished.bam",
         config["genome"],
     output:
         config["experiment_name"] + "/mapped.bam"
@@ -31,27 +29,3 @@ rule collapse:
         config["experiment_name"] + "/collapsed.gff"
     shell:
         "isoseq3 collapse {input} {output}"
-
-# rule :
-#     input:
-#         ""
-#     output:
-#         ""
-#     shell:
-#         ""
-
-# rule :
-#     input:
-#         ""
-#     output:
-#         ""
-#     shell:
-#         ""
-
-# rule :
-#     input:
-#         ""
-#     output:
-#         ""
-#     shell:
-#         ""

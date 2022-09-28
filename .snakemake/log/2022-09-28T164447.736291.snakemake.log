@@ -1,0 +1,7 @@
+Building DAG of jobs...
+MissingInputException in rule pbmm2 in line 17 of /media/mike/WD_4TB/FINAL_ASSEMBLY/samba/isoseq_processing/snakefile:
+Missing input files for rule pbmm2:
+    output: M_javanica/mapped.bam
+    affected files:
+        M_javanicaunpolished.bam
+        /home/531734/mike/FINAL_ASSEMBLY/samba/FINAL_ASSEMBLY.linear.fasta
